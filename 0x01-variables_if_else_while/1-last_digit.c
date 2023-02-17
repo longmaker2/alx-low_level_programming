@@ -4,7 +4,7 @@
 /**
  * main - main block
  * Return: 0
- * added nothing 
+ * added nothing
  */
 
 int main(void)
