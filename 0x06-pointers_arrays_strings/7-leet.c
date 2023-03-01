@@ -1,26 +1,29 @@
 #include "main.h"
 /**
- * _strcat - concatenates two strings,
- * @dest: destination.
- * @src: source.
+ * leet - encodes a string into 1337
+ * @s: input string.
  * Return: the pointer to dest.
  */
-char *_strcat(char *dest, char *src)
+
+char *leet(char *s)
 {
-    int count = 0, count2 = 0;
+int count = 0, i;
+int low_letters[] = {97, 101, 111, 116, 108};
+int upp_letters[] = {65, 69, 79, 84, 76};
+int numbers[] = {52, 51, 48, 55, 49};
 
-    while (*(dest + count) != '\0')
-    {
-        count++;
-    }
+while (*(s + count) != '\0')
+{
+for (i = 0; i < 5; i++)
+{
+if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
+{
+*(s + count) = numbers[i];
+break;
+}
+}
+count++;
+}
 
-    while (count2 >= 0)
-    {
-        *(dest + count) = *(src + count2);
-        if (*(src + count2) == '\0')
-            break;
-        count++;
-        count2++;
-    }
-    return (dest);
+return (s);
 }
