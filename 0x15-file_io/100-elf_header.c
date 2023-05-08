@@ -154,7 +154,7 @@ void print_magic(char *ptr)
 }
 
 /**
- * check_sys - check the version system.
+ * check_sys - check the system.
  * @ptr: magic.
  * Return: no return.
  */

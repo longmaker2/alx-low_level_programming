@@ -2,7 +2,7 @@
 #define MAIN_H
 
 /*
- * Desc: Header file containing prototypes for all functions
+ * Desc: Header file containing all the prototypes for all functions
  */
 
 #include <sys/types.h>
